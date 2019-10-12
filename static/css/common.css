@@ -1,0 +1,1271 @@
+html {
+	min-width: 1200px;
+}
+body {
+    font-size: .875rem;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0.125rem;
+    -moz-border-radius: 0.125rem;
+    -webkit-border-radius: 0.125rem;
+    background-color: #ccc;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: rotate(0deg)
+    }
+
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@-moz-keyframes rotate {
+    from {
+        -moz-transform: rotate(0deg)
+    }
+
+    to {
+        -moz-transform: rotate(359deg)
+    }
+}
+
+@-o-keyframes rotate {
+    from {
+        -o-transform: rotate(0deg)
+    }
+
+    to {
+        -o-transform: rotate(359deg)
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg)
+    }
+
+    to {
+        transform: rotate(359deg)
+    }
+}
+
+a:hover {
+    text-decoration: none;
+}
+.container {
+	min-width: 1200px;
+	width: 1200px;
+	max-width: none !important;
+}
+@media screen and (max-width: 1200px) { 
+	body{ 
+		width: 1200px; 
+	} 
+} 
+.rotating {
+    display: inline-block;
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+    -webkit-animation: rotate 1s linear infinite;
+    -moz-animation: rotate 1s linear infinite;
+    -o-animation: rotate 1s linear infinite;
+    animation: rotate 1s linear infinite;
+}
+
+.router-loading {
+    height: 2px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0px;
+    background: #0EC5A1;
+    z-index: 999999;
+    display: none;
+}
+
+.btn:focus,.btn:active:focus,.btn.active:focus,.btn.focus,.btn:active.focus,.btn.active.focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.form-control:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.table thead th {
+    border-bottom-width: 1px;
+}
+
+.custom-control-label {
+    position: relative;
+    display: inherit;
+}
+
+code,pre {
+    white-space: pre-wrap;
+}
+
+.text-white code, .text-white pre {
+    color: #fff;
+}
+
+textarea {
+    min-height: 110px;
+}
+
+blockquote {
+    border-left: 5px solid #f86466;
+}
+
+blockquote p {
+    margin-bottom: 0;
+}
+
+.table-card tr:first-child th, .table-card tr:first-child th {
+    border-top: none;
+    border-bottom-width: 1px;
+}
+
+
+/*Jump*/
+.system-jump-box {
+    border: 0.25rem solid #c6e9ff;
+    margin: 5rem 0;
+}
+
+.system-jump-message>h5>.system-jump-icon {
+    font-size: 1.25rem;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.75rem;
+}
+
+.system-jump-right {
+    background: #e2ffea;
+}
+
+.system-jump-right>h5 {
+    color: #59ba74;
+}
+
+.system-jump-info {
+    background: #F2F9FD;
+}
+
+.system-jump-info>h5 {
+    color: #888888;
+}
+
+.system-jump-error {
+    background: #fff0f0;
+}
+
+.system-jump-error>h5 {
+    color: #d70000;
+}
+
+.system-jump-loading {
+    background: #e8ecff;
+}
+
+.system-jump-loading>h5 {
+    color: #36befa;
+}
+
+/*footer*/
+footer {
+    padding: 1.875rem 0 3.75rem 0;
+    background: #f9f9f9;
+}
+
+
+.sucaiDialog-dialog-imgbar,.sucaiDialog-dialog-imgtit a,.sucaiDialog-dialog-tab .sucaiDialog-dialog-title span,.sucaiDialog-dialog-title {
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+html #sucaiDialogcss-dialog {
+    display: none;
+    position: absolute;
+    width: 1989px
+}
+
+.sucaiDialog-dialog,.sucaiDialog-dialog-shade {
+    position: fixed;
+    _position: absolute;
+    pointer-events: auto
+}
+
+.sucaiDialog-dialog-shade {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    _height: expression(document.body.offsetHeight+"px")
+}
+
+.sucaiDialog-dialog {
+    -webkit-overflow-scrolling: touch;
+    top: 150px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    -webkit-background-clip: content;
+    border-radius: 2px;
+    box-shadow: 1px 1px 50px rgba(0,0,0,.3)
+}
+
+.sucaiDialog-dialog-close {
+    position: absolute
+}
+
+.sucaiDialog-dialog-content {
+    position: relative
+}
+
+.sucaiDialog-dialog-border {
+    border: 1px solid #B2B2B2;
+    border: 1px solid rgba(0,0,0,.1);
+    box-shadow: 1px 1px 5px rgba(0,0,0,.2)
+}
+
+.sucaiDialog-dialog-load {
+    background: url(../images/loading-1.gif) center center no-repeat #eee
+}
+
+.sucaiDialog-dialog-ico {
+    background: url(../images/icon.png) no-repeat
+}
+
+.sucaiDialog-dialog-btn a,.sucaiDialog-dialog-dialog .sucaiDialog-dialog-ico,.sucaiDialog-dialog-setwin a {
+    display: inline-block;
+    *display: inline;
+    *zoom:1;vertical-align: top
+}
+
+.sucaiDialog-dialog-move {
+    display: none;
+    position: fixed;
+    *position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: move;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    background-color: #fff;
+    z-index: 2147483647
+}
+
+.sucaiDialog-dialog-resize {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 0;
+    bottom: 0;
+    cursor: se-resize
+}
+
+.dialog-anim {
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s
+}
+
+@-webkit-keyframes dialog-bounceIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.5);
+        transform: scale(.5)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes dialog-bounceIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.5);
+        -ms-transform: scale(.5);
+        transform: scale(.5)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+.dialog-anim-00 {
+    -webkit-animation-name: dialog-bounceIn;
+    animation-name: dialog-bounceIn
+}
+
+@-webkit-keyframes dialog-zoomInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.1) translateY(-2000px);
+        transform: scale(.1) translateY(-2000px);
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale(.475) translateY(60px);
+        transform: scale(.475) translateY(60px);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out
+    }
+}
+
+@keyframes dialog-zoomInDown {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.1) translateY(-2000px);
+        -ms-transform: scale(.1) translateY(-2000px);
+        transform: scale(.1) translateY(-2000px);
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale(.475) translateY(60px);
+        -ms-transform: scale(.475) translateY(60px);
+        transform: scale(.475) translateY(60px);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out
+    }
+}
+
+.dialog-anim-01 {
+    -webkit-animation-name: dialog-zoomInDown;
+    animation-name: dialog-zoomInDown
+}
+
+@-webkit-keyframes dialog-fadeInUpBig {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(2000px);
+        transform: translateY(2000px)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+
+@keyframes dialog-fadeInUpBig {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(2000px);
+        -ms-transform: translateY(2000px);
+        transform: translateY(2000px)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0)
+    }
+}
+
+.dialog-anim-02 {
+    -webkit-animation-name: dialog-fadeInUpBig;
+    animation-name: dialog-fadeInUpBig
+}
+
+@-webkit-keyframes dialog-zoomInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.1) translateX(-2000px);
+        transform: scale(.1) translateX(-2000px);
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale(.475) translateX(48px);
+        transform: scale(.475) translateX(48px);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out
+    }
+}
+
+@keyframes dialog-zoomInLeft {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.1) translateX(-2000px);
+        -ms-transform: scale(.1) translateX(-2000px);
+        transform: scale(.1) translateX(-2000px);
+        -webkit-animation-timing-function: ease-in-out;
+        animation-timing-function: ease-in-out
+    }
+
+    60% {
+        opacity: 1;
+        -webkit-transform: scale(.475) translateX(48px);
+        -ms-transform: scale(.475) translateX(48px);
+        transform: scale(.475) translateX(48px);
+        -webkit-animation-timing-function: ease-out;
+        animation-timing-function: ease-out
+    }
+}
+
+.dialog-anim-03 {
+    -webkit-animation-name: dialog-zoomInLeft;
+    animation-name: dialog-zoomInLeft
+}
+
+@-webkit-keyframes dialog-rollIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-100%) rotate(-120deg);
+        transform: translateX(-100%) rotate(-120deg)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0) rotate(0);
+        transform: translateX(0) rotate(0)
+    }
+}
+
+@keyframes dialog-rollIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateX(-100%) rotate(-120deg);
+        -ms-transform: translateX(-100%) rotate(-120deg);
+        transform: translateX(-100%) rotate(-120deg)
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateX(0) rotate(0);
+        -ms-transform: translateX(0) rotate(0);
+        transform: translateX(0) rotate(0)
+    }
+}
+
+.dialog-anim-04 {
+    -webkit-animation-name: dialog-rollIn;
+    animation-name: dialog-rollIn
+}
+
+@keyframes dialog-fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.dialog-anim-05 {
+    -webkit-animation-name: dialog-fadeIn;
+    animation-name: dialog-fadeIn
+}
+
+@-webkit-keyframes dialog-shake {
+    0%,100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+
+    10%,30%,50%,70%,90% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px)
+    }
+
+    20%,40%,60%,80% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px)
+    }
+}
+
+@keyframes dialog-shake {
+    0%,100% {
+        -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0)
+    }
+
+    10%,30%,50%,70%,90% {
+        -webkit-transform: translateX(-10px);
+        -ms-transform: translateX(-10px);
+        transform: translateX(-10px)
+    }
+
+    20%,40%,60%,80% {
+        -webkit-transform: translateX(10px);
+        -ms-transform: translateX(10px);
+        transform: translateX(10px)
+    }
+}
+
+.dialog-anim-06 {
+    -webkit-animation-name: dialog-shake;
+    animation-name: dialog-shake
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+
+    100% {
+        opacity: 1
+    }
+}
+
+.sucaiDialog-dialog-title {
+    padding: 0 80px 0 20px;
+    height: 42px;
+    line-height: 42px;
+    border-bottom: 1px solid #eee;
+    font-size: 14px;
+    color: #333;
+    overflow: hidden;
+    background-color: #F8F8F8;
+    border-radius: 2px 2px 0 0
+}
+
+.sucaiDialog-dialog-setwin {
+    position: absolute;
+    right: 15px;
+    *right: 0;
+    top: 15px;
+    font-size: 0;
+    line-height: initial
+}
+
+.sucaiDialog-dialog-setwin a {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    font-size: 12px;
+    _overflow: hidden
+}
+
+.sucaiDialog-dialog-setwin .sucaiDialog-dialog-min cite {
+    position: absolute;
+    width: 14px;
+    height: 2px;
+    left: 0;
+    top: 50%;
+    margin-top: -1px;
+    background-color: #2E2D3C;
+    cursor: pointer;
+    _overflow: hidden
+}
+
+.sucaiDialog-dialog-setwin .sucaiDialog-dialog-min:hover cite {
+    background-color: #2D93CA
+}
+
+.sucaiDialog-dialog-setwin .sucaiDialog-dialog-max {
+    background-position: -32px -40px
+}
+
+.sucaiDialog-dialog-setwin .sucaiDialog-dialog-max:hover {
+    background-position: -16px -40px
+}
+
+.sucaiDialog-dialog-setwin .sucaiDialog-dialog-maxmin {
+    background-position: -65px -40px
+}
+
+.sucaiDialog-dialog-setwin .sucaiDialog-dialog-maxmin:hover {
+    background-position: -49px -40px
+}
+
+.sucaiDialog-dialog-setwin .sucaiDialog-dialog-close1 {
+    background-position: 1px -40px;
+    cursor: pointer
+}
+
+.sucaiDialog-dialog-setwin .sucaiDialog-dialog-close1:hover {
+    opacity: .7
+}
+
+.sucaiDialog-dialog-setwin .sucaiDialog-dialog-close2 {
+    position: absolute;
+    right: -28px;
+    top: -28px;
+    width: 30px;
+    height: 30px;
+    margin-left: 0;
+    background-position: -149px -31px;
+    *right: -18px;
+    _display: none
+}
+
+.sucaiDialog-dialog-setwin .sucaiDialog-dialog-close2:hover {
+    background-position: -180px -31px
+}
+
+.sucaiDialog-dialog-btn {
+    text-align: right;
+    padding: 0 15px 12px;
+    pointer-events: auto;
+    user-select: none;
+    -webkit-user-select: none
+}
+
+.sucaiDialog-dialog-btn a {
+    height: 28px;
+    line-height: 28px;
+    margin: 5px 5px 0;
+    padding: 0 15px;
+    border: 1px solid #dedede;
+    background-color: #fff;
+    color: #333;
+    border-radius: 2px;
+    font-weight: 400;
+    cursor: pointer;
+    text-decoration: none
+}
+
+.sucaiDialog-dialog-btn a:hover {
+    opacity: .9;
+    text-decoration: none
+}
+
+.sucaiDialog-dialog-btn a:active {
+    opacity: .8
+}
+
+.sucaiDialog-dialog-btn .sucaiDialog-dialog-btn0 {
+    border-color: #1E9FFF;
+    background-color: #1E9FFF;
+    color: #fff
+}
+
+.sucaiDialog-dialog-btn-l {
+    text-align: left
+}
+
+.sucaiDialog-dialog-btn-c {
+    text-align: center
+}
+
+.sucaiDialog-dialog-dialog {
+    min-width: 260px
+}
+
+.sucaiDialog-dialog-dialog .sucaiDialog-dialog-content {
+    position: relative;
+    padding: 20px;
+    line-height: 24px;
+    word-break: break-all;
+    overflow: hidden;
+    font-size: 14px;
+    overflow-x: hidden;
+    overflow-y: auto
+}
+
+.sucaiDialog-dialog-dialog .sucaiDialog-dialog-content .sucaiDialog-dialog-ico {
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    _left: -40px;
+    width: 30px;
+    height: 30px
+}
+
+.sucaiDialog-dialog-ico1 {
+    background-position: -30px 0
+}
+
+.sucaiDialog-dialog-ico2 {
+    background-position: -60px 0
+}
+
+.sucaiDialog-dialog-ico3 {
+    background-position: -90px 0
+}
+
+.sucaiDialog-dialog-ico4 {
+    background-position: -120px 0
+}
+
+.sucaiDialog-dialog-ico5 {
+    background-position: -150px 0
+}
+
+.sucaiDialog-dialog-ico6 {
+    background-position: -180px 0
+}
+
+.sucaiDialog-dialog-rim {
+    border: 6px solid #8D8D8D;
+    border: 6px solid rgba(0,0,0,.3);
+    border-radius: 5px;
+    box-shadow: none
+}
+
+.sucaiDialog-dialog-msg {
+    min-width: 180px;
+    border: 1px solid #D3D4D3;
+    box-shadow: none
+}
+
+.sucaiDialog-dialog-hui {
+    min-width: 100px;
+    background-color: #000;
+    filter: alpha(opacity=60);
+    background-color: rgba(0,0,0,.6);
+    color: #fff;
+    border: none
+}
+
+.sucaiDialog-dialog-hui .sucaiDialog-dialog-content {
+    padding: 12px 25px;
+    text-align: center
+}
+
+.sucaiDialog-dialog-dialog .sucaiDialog-dialog-padding {
+    padding: 20px 20px 20px 55px;
+    text-align: left
+}
+
+.sucaiDialog-dialog-page .sucaiDialog-dialog-content {
+    position: relative;
+    overflow: auto
+}
+
+.sucaiDialog-dialog-iframe .sucaiDialog-dialog-btn,.sucaiDialog-dialog-page .sucaiDialog-dialog-btn {
+    padding-top: 10px
+}
+
+.sucaiDialog-dialog-nobg {
+    background: 0 0
+}
+
+.sucaiDialog-dialog-iframe iframe {
+    display: block;
+    width: 100%
+}
+
+.sucaiDialog-dialog-loading {
+    border-radius: 100%;
+    background: 0 0;
+    box-shadow: none;
+    border: none
+}
+
+.dialog-msg-error {
+    background-color: rgba(234, 36, 55, 0.8);
+}
+
+.dialog-msg-info {
+    background-color: rgba(255, 143, 0, 0.8);
+}
+
+.dialog-msg-success {
+    background-color: rgba(40, 167, 69, 0.8);
+}
+
+.dialog-msg-loading {
+    background-color: rgba(21, 200, 228, 0.8);
+}
+
+.sucaiDialog-dialog-loading .sucaiDialog-dialog-content {
+    width: 60px;
+    height: 24px;
+    background: url(../images/loading-0.gif) no-repeat
+}
+
+.sucaiDialog-dialog-loading .sucaiDialog-dialog-loading1 {
+    width: 37px;
+    height: 37px;
+    background: url(../images/loading-1.gif) no-repeat
+}
+
+.sucaiDialog-dialog-ico16,.sucaiDialog-dialog-loading .sucaiDialog-dialog-loading2 {
+    width: 32px;
+    height: 32px;
+    background: url(../images/loading-2.gif) no-repeat
+}
+
+.sucaiDialog-dialog-tips {
+    background: 0 0;
+    box-shadow: none;
+    border: none
+}
+
+.sucaiDialog-dialog-tips .sucaiDialog-dialog-content {
+    position: relative;
+    line-height: 22px;
+    min-width: 12px;
+    padding: 8px 15px;
+    font-size: 12px;
+    _float: left;
+    border-radius: 2px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,.2);
+    background-color: #000;
+    color: #fff
+}
+
+.sucaiDialog-dialog-tips .sucaiDialog-dialog-close {
+    right: -2px;
+    top: -1px
+}
+
+.sucaiDialog-dialog-tips i.sucaiDialog-dialog-TipsG {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 8px;
+    border-color: transparent;
+    border-style: dashed;
+    *overflow: hidden
+}
+
+.sucaiDialog-dialog-tips i.sucaiDialog-dialog-TipsB,.sucaiDialog-dialog-tips i.sucaiDialog-dialog-TipsT {
+    left: 5px;
+    border-right-style: solid;
+    border-right-color: #000
+}
+
+.sucaiDialog-dialog-tips i.sucaiDialog-dialog-TipsT {
+    bottom: -8px
+}
+
+.sucaiDialog-dialog-tips i.sucaiDialog-dialog-TipsB {
+    top: -8px
+}
+
+.sucaiDialog-dialog-tips i.sucaiDialog-dialog-TipsL,.sucaiDialog-dialog-tips i.sucaiDialog-dialog-TipsR {
+    top: 5px;
+    border-bottom-style: solid;
+    border-bottom-color: #000
+}
+
+.sucaiDialog-dialog-tips i.sucaiDialog-dialog-TipsR {
+    left: -8px
+}
+
+.sucaiDialog-dialog-tips i.sucaiDialog-dialog-TipsL {
+    right: -8px
+}
+
+.sucaiDialog-dialog-lan[type=dialog] {
+    min-width: 280px
+}
+
+.sucaiDialog-dialog-lan .sucaiDialog-dialog-title {
+    background: #4476A7;
+    color: #fff;
+    border: none
+}
+
+.sucaiDialog-dialog-lan .sucaiDialog-dialog-btn {
+    padding: 5px 10px 10px;
+    text-align: right;
+    border-top: 1px solid #E9E7E7
+}
+
+.sucaiDialog-dialog-lan .sucaiDialog-dialog-btn a {
+    background: #fff;
+    border-color: #E9E7E7;
+    color: #333
+}
+
+.sucaiDialog-dialog-lan .sucaiDialog-dialog-btn .sucaiDialog-dialog-btn1 {
+    background: #C9C5C5
+}
+
+.sucaiDialog-dialog-molv .sucaiDialog-dialog-title {
+    background: #009f95;
+    color: #fff;
+    border: none
+}
+
+.sucaiDialog-dialog-molv .sucaiDialog-dialog-btn a {
+    background: #009f95;
+    border-color: #009f95
+}
+
+.sucaiDialog-dialog-molv .sucaiDialog-dialog-btn .sucaiDialog-dialog-btn1 {
+    background: #92B8B1
+}
+
+.sucaiDialog-dialog-iconext {
+    background: url(../images/icon-ext.png) no-repeat
+}
+
+.sucaiDialog-dialog-prompt .sucaiDialog-dialog-input {
+    display: block;
+    width: 230px;
+    height: 36px;
+    margin: 0 auto;
+    line-height: 30px;
+    padding-left: 10px;
+    border: 1px solid #e6e6e6;
+    color: #333
+}
+
+.sucaiDialog-dialog-prompt textarea.sucaiDialog-dialog-input {
+    width: 300px;
+    height: 100px;
+    line-height: 20px;
+    padding: 6px 10px
+}
+
+.sucaiDialog-dialog-prompt .sucaiDialog-dialog-content {
+    padding: 20px
+}
+
+.sucaiDialog-dialog-prompt .sucaiDialog-dialog-btn {
+    padding-top: 0
+}
+
+.sucaiDialog-dialog-tab {
+    box-shadow: 1px 1px 50px rgba(0,0,0,.4)
+}
+
+.sucaiDialog-dialog-tab .sucaiDialog-dialog-title {
+    padding-left: 0;
+    overflow: visible
+}
+
+.sucaiDialog-dialog-tab .sucaiDialog-dialog-title span {
+    position: relative;
+    float: left;
+    min-width: 80px;
+    max-width: 260px;
+    padding: 0 20px;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer
+}
+
+.sucaiDialog-dialog-tab .sucaiDialog-dialog-title span.sucaiDialog-this {
+    height: 43px;
+    border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
+    background-color: #fff;
+    z-index: 10
+}
+
+.sucaiDialog-dialog-tab .sucaiDialog-dialog-title span:first-child {
+    border-left: none
+}
+
+.sucaiDialog-dialog-tabmain {
+    line-height: 24px;
+    clear: both
+}
+
+.sucaiDialog-dialog-tabmain .sucaiDialog-dialog-tabli {
+    display: none
+}
+
+.sucaiDialog-dialog-tabmain .sucaiDialog-dialog-tabli.sucaiDialog-this {
+    display: block
+}
+
+.sucaiDialog-dialog-photos {
+    -webkit-animation-duration: .8s;
+    animation-duration: .8s
+}
+
+.sucaiDialog-dialog-photos .sucaiDialog-dialog-content {
+    overflow: hidden;
+    text-align: center
+}
+
+.sucaiDialog-dialog-photos .sucaiDialog-dialog-phimg img {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    *display: inline;
+    *zoom:1;vertical-align: top
+}
+
+.sucaiDialog-dialog-imgbar,.sucaiDialog-dialog-imguide {
+    display: none
+}
+
+.sucaiDialog-dialog-imgnext,.sucaiDialog-dialog-imgprev {
+    position: absolute;
+    top: 50%;
+    width: 27px;
+    _width: 44px;
+    height: 44px;
+    margin-top: -22px;
+    outline: 0;
+    blr: expression(this.onFocus=this.blur())
+}
+
+.sucaiDialog-dialog-imgprev {
+    left: 10px;
+    background-position: -5px -5px;
+    _background-position: -70px -5px
+}
+
+.sucaiDialog-dialog-imgprev:hover {
+    background-position: -33px -5px;
+    _background-position: -120px -5px
+}
+
+.sucaiDialog-dialog-imgnext {
+    right: 10px;
+    _right: 8px;
+    background-position: -5px -50px;
+    _background-position: -70px -50px
+}
+
+.sucaiDialog-dialog-imgnext:hover {
+    background-position: -33px -50px;
+    _background-position: -120px -50px
+}
+
+.sucaiDialog-dialog-imgbar {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 32px;
+    line-height: 32px;
+    background-color: rgba(0,0,0,.8);
+    background-color: #000\9;
+    filter: Alpha(opacity=80);
+    color: #fff;
+    overflow: hidden;
+    font-size: 0
+}
+
+.sucaiDialog-dialog-imgtit * {
+    display: inline-block;
+    *display: inline;
+    *zoom:1;vertical-align: top;
+    font-size: 12px
+}
+
+.sucaiDialog-dialog-imgtit a {
+    max-width: 65%;
+    overflow: hidden;
+    color: #fff
+}
+
+.sucaiDialog-dialog-imgtit a:hover {
+    color: #fff;
+    text-decoration: underline
+}
+
+.sucaiDialog-dialog-imgtit em {
+    padding-left: 10px;
+    font-style: normal
+}
+
+@-webkit-keyframes dialog-bounceOut {
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(.7);
+        transform: scale(.7)
+    }
+
+    30% {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05)
+    }
+
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+@keyframes dialog-bounceOut {
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(.7);
+        -ms-transform: scale(.7);
+        transform: scale(.7)
+    }
+
+    30% {
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05)
+    }
+
+    0% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+.dialog-anim-close {
+    -webkit-animation-name: dialog-bounceOut;
+    animation-name: dialog-bounceOut;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: .2s;
+    animation-duration: .2s
+}
+
+@media screen and (max-width: 1100px) {
+    .sucaiDialog-dialog-iframe {
+        overflow-y:auto;
+        -webkit-overflow-scrolling: touch
+    }
+}
+
+
+/*admin*/
+.admin-top {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+    padding-left: 160px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.admin-top>div>a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+}
+.left-bar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 160px;
+    background-color: #20222a;
+    -webkit-box-shadow: 2px 0 6px rgba(0, 21, 41, 0.35);
+    box-shadow: 2px 0 6px rgba(0, 21, 41, 0.35);
+    z-index: 1050
+}
+.left-bar h5 {text-align: center;line-height: 50px;color: #fff;}
+.left-nav>a {
+    display: block;
+    line-height: 42px;
+    height: 42px;
+    padding: 0 25px;
+    border-left: 3px solid transparent;
+    color: rgba(255, 255, 255, 0.7);
+    -webkit-transition: all .7s cubic-bezier(0,0,.7,1);
+    transition: all .7s cubic-bezier(0,0,.7,1);
+}
+.left-nav>a:hover {
+    border-left: 3px solid #1686ef;
+    background: rgba(22, 134, 239, 0.6);
+    color: rgba(255, 255, 255, 0.9);
+}
+.left-nav>a.active {
+    border-left: 3px solid #1686ef;
+    background: #1686ef;
+    color: #fff;
+}
+.admin-content {
+    background: #f2f2f2;
+    transition: all 0.4s ease-in-out;
+    position: relative;
+    margin-left: 160px;
+    margin-top: 50px;
+    padding-bottom: 20px;
+}
+.cookie-url-item {
+    position: relative;
+}
+.cookie-url-item .cookie-url-delete {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    line-height: 26px;
+    background: #1686ef;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.url-box {
+    height: 50px;
+    background-color: #fff;
+    width: 700px;
+    margin: 200px auto 100px;
+}
+.url-box input {
+    background: none;
+    padding: 0 15px;
+    margin: 0;
+    outline: none;
+    width: 580px;
+    height: 50px;
+    line-height: 50px;
+    float: left;
+    border: 2px solid #4bb2ff;
+    border-right: 0;
+    font-size: 18px;
+    color: #106306;
+}
+.url-box .submit {
+    height: 50px;
+    line-height: 50px;
+    background-color: #1E9FFF;
+    color: #fff;
+    float: left;
+    width: 120px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    font-size: 18px;
+    opacity: 0.8;
+}
+.url-box .submit.disabled {
+    background-color: #aaa;
+}
+.url-box .submit:hover {
+    opacity: 1;
+}
+.navbar-index .navbar-brand {
+    color: #fff;
+}
+.navbar-index .navbar-nav .nav-link {
+    color: rgba(255,255,255,.8);
+}
+.navbar-index .navbar-nav .active>.nav-link, .navbar-index .navbar-nav .nav-link.active, .navbar-index .navbar-nav .nav-link.show, .navbar-index .navbar-nav .show>.nav-link {
+    color: #fff;
+}
+.Clipboard {cursor: pointer;}

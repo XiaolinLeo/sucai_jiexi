@@ -1,0 +1,7 @@
+使用CMD命令窗口执行下面语句
+注意：需要开启四个CMD窗口，每个窗口执行一条，且cmd窗口不能关闭
+
+php think queue:listen --queue="download"
+php think queue:listen --queue="upload"
+php think queue:listen --queue="cookie"
+php think queue:listen --queue="default"
