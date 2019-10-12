@@ -15,11 +15,11 @@ return [
     // 服务器地址
     'hostname'        => '127.0.0.1',
     // 数据库名
-    'database'        => 'sucai',
+    'database'        => 'www_80movie_top',
     // 用户名
-    'username'        => '',
+    'username'        => 'www_80movie_top',
     // 密码
-    'password'        => '',
+    'password'        => 'LywYJzmbPabphn4L',
     // 端口
     'hostport'        => '3306',
     // 连接dsn
