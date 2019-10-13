@@ -66,7 +66,13 @@ class Account extends Controller
             if ($result !== true) {
                 return $this->error($result);
             }
-
+            if(request()->isPost()){
+            $data = input('post.');
+            if(!captcha_check($data['verifyCode'])) {
+                // 校验失败
+                $this->error('验证码不正确');
+            }
+            }
             Member::create($post)->login();
 
             return $this->success('账户注册成功！', 'index/index/index');

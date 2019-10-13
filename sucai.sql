@@ -199,8 +199,8 @@ INSERT INTO `setting` (`key`, `value`) VALUES
 ('site_open', '1'),
 ('allow_register', '0'),
 ('must_login', '1'),
-('site_name', '精灵素材'),
-('logo_name', '精灵素材'),
+('site_name', '吾爱素材'),
+('logo_name', '吾爱素材'),
 ('AccessKeyId', ''),
 ('AccessKeySecret', ''),
 ('Endpoint', 'http://oss-cn-shanghai.aliyuncs.com'),
@@ -212,13 +212,13 @@ INSERT INTO `setting` (`key`, `value`) VALUES
 ('proxy_card_rule', '@@##**'),
 ('auto_save_file', '1'),
 ('parse_between_time', '15'),
-('reset_cookie_times', '20190514'),
+('reset_cookie_times', '20190914'),
 ('email_host', 'smtp.qq.com'),
 ('email_port', '465'),
 ('email_username', ''),
 ('email_password', ''),
 ('email_fromname', ''),
-('version', '20190509');
+('version', '20191012');
 
 -- --------------------------------------------------------
 

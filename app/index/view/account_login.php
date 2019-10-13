@@ -64,7 +64,7 @@
 					<a class="text-light" href="{:url('index/account/register')}">注册账号</a>
 				{/if}
 			</div>
-			<a class="text-light" href="{:url('index/account/get_password')}">找回密码</a>
+			<!-- <a class="text-light" href="{:url('index/account/get_password')}">找回密码</a> -->
 		</div>
 		<div class="mt-3 text-light">
         </div>
