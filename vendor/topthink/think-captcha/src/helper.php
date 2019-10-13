@@ -43,11 +43,11 @@ function captcha_src($id = '')
  */
 function captcha_img($id = "")
 {
-    $js_src = "this.src='".captcha_src()."?seed='+Math.random()";
-    return '<img src="' . captcha_src($id) . '" id="vcode" title="点击更新验证码" alt="点击更新验证码" οnclick="'.$js_src.'" />';
-    //return '![](' . captcha_src($id) . ')';
+$js_src ="this.src='".captcha_src()."?seed='+Math.random()";
+return '<img src="' . captcha_src($id) . '" alt="点击更新验证码"
+onclick="'.$js_src.'" />';
+//return '![](' . captcha_src($id) . ')';
 }
-
 /**
  * @param        $value
  * @param string $id
