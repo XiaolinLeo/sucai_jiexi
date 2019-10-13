@@ -5,6 +5,7 @@ use app\admin\controller\Base;
 use app\common\model\Card as RechargeCard;
 use app\common\model\WebSite;
 use think\Db;
+require_once 'vendor/phpoffice/phpexcel/Classes/PHPExcel/IOFactory.php';//linux 下导出卡密
 
 class Card extends Base
 {
